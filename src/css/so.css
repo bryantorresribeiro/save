@@ -1,6 +1,15 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dino{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 80px;
 }
 header{
     display: flex;
@@ -47,10 +56,9 @@ header nav img:hover{
     cursor: pointer;
 }
 main{
+    width: 720px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     margin: 20px;
 }
 aside{
@@ -70,8 +78,12 @@ aside li{
     margin: 10px;
 }
 .left{
+   width: 500px;
    display: flex;
+   justify-content: center;
+   align-items: center;
    font-size: 20px;
+   
 }
 .left h2{
     font-size: 40px;    
