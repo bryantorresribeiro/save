@@ -5,8 +5,8 @@ body{
     align-items: center;
 }
 .dino{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     left: 20px;
     top: 80px;
@@ -71,11 +71,19 @@ aside{
     border-radius: 10px;
     overflow-y: scroll;
 }
+
+aside nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+aside nav a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
 ::-webkit-scrollbar {
     background-color: #733fb6;   
-}
-aside li{
-    margin: 10px;
 }
 .left{
    width: 500px;
@@ -93,4 +101,10 @@ aside li{
 }
 .info{
     margin-top: 40px;
+}
+
+@media (max-width:1024px){
+    .dino{
+        display: none;
+    }
 }

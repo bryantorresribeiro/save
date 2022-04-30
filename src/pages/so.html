@@ -18,32 +18,32 @@
 <body>
     <header>
         <nav> 
-            <a href="../pages/home.html"><img src="../img/logo.png" alt=""></a> 
-            <a href="../pages/so.html">S.O</a> 
-            <a href="../pages/vb.html">V.B</a>
+           <a href="../../index.html"><img src="../img/logo.png" alt=""></a> 
+           <a href="../pages/so.html">S.O</a> 
+           <a href="../pages/vb.html">V.B</a>
+           <a href="../pages/about.html">Sobre</a>  
            <img src="../img/mario.gif" alt="mario"> 
         </nav>
-           <img class="light" src="../img/ligth.png" alt="ligth">
+        <img class="light" src="../img/ligth.png" alt="ligth">     
     </header>
  
     <img class="dino" src="../img/dino.gif" alt="">
     
     <main>
         <aside>
-            <ul>
-                <li>Windows</li>
-                <li>linux</li>
-                <li>VtBox</li>
-                <li>LJ_Linux</li>
-                <li>Apache</li>
-                <li>GCC</li>
-                <li>Ex-C/C++</li>
-                <li>Ajuda</li>
-            </ul>
+            <nav>
+                <a href="#S.O">Sistemas</a>
+                <a href="#windows">Windows</a>
+                <a href="#linux">linux</a>
+                <a href="#lojinha">lojinha</a>
+                <a href="#apache">Apache</a>
+                <a href="#gcc">GCC</a>
+                <a href="#C">C/C++</a>
+            </nav>
         </aside>
 
        <div class="left">
-            <section class="info">
+            <section class="info"> <!--so-->
                     <h2 id="S.O" >Sistema Operacional- Windows_Linux</h2>
                     <br>
                     <div class="text">
@@ -69,13 +69,11 @@
                         <h4>Dois exemplos de Sistemas Operacionais são...</h4>
                         <button id="button" type="button" id="input" class="btn btn-outline-dark">seguir</button>
                     </div>
-            <section>
+            </section>
                 <!--Essa parte tem que aparecer depois de apertar o botão de cima-->
-        <section class="info">
-            <h2 >Windows</h2>
+        <section class="info"> <!--windows-->
+            <h2 id="windows" >Windows</h2>
             <div class="text">
-                <br>
-                <button id="button" type="button" id="input" class="btn btn-outline-dark">Curiosidade</button>
                 <br>
                 <p>
                     Curiosidade:  O Android passou o Windows quando os smartphones se popularizaram. 
@@ -94,11 +92,32 @@
             <!--Os dois Sistemas Operacionais mais utilizados em pc no mundo, veja agora como funciona e alguns comandos que se pode utilizar no terminal central do computador.-->
             </div>
         </section>
-        <section class="info">
-            <h2 >Linux-Ubuntu</h2>
+        <section>
+            <h2>Comandos no SO Windows que são utilizados diariamente por alunos de computação e profissionais da área.</h2>
+        
+            <div>
+                <ul>
+                    <li>\ : tem uma pasta a seguir dele.
+                    <li>> : é o fim do comando. 
+                    <li>cls: limpar a tela.
+                    <li>color —- : nesse espaço o respectivo número de cor vai mudar a cor das letras. 
+                    <li>help —-- :  o comando que você colocar no espaço vai mostrar o que esse comando faz.
+                    <li>dir: mostrar o conteúdo da pasta.
+                    <li>cd : comando que te permite se movimentar entre as pastas
+                    <li>cd . . : comando para sair das pastas.
+                    <li>cd \ : ir direto para a raiz. 
+                    <li>. . : o diretório que está atrás de mim. 
+                    <li>C:\Users\paulo\downloads> cd . . \ documents : Tira o último e vai para…
+                    <li>md: criar pasta.
+                    <li>rd: apagar pasta.
+                        
+                </ul>
+            </div>
+            
+        </section>
+        <section class="info"> <!--linux-->
+            <h2 id="linux">Linux-Ubuntu</h2>
             <div class="text">
-                <br>
-                <button id="button" type="button" id="input" class="btn btn-outline-dark">Curiosidade</button>
                 <br>
                 <p>
                     Curiosidade:  O Linux entende que por você estar usando ele, sabe o que estar fazendo, então 
@@ -115,83 +134,38 @@
             <!--Os dois Sistemas Operacionais mais utilizados em pc no mundo, veja agora como funciona e alguns comandos que se pode utilizar no terminal central do computador.-->
            
            <br> 
-           <br>
-           <a href="http://" target="_blank" rel="noopener noreferrer"></a> 
-           <p>
-                fonte de estudo: <br>
-               <a href="https://tecnoblog.net/responde/o-que-e-um-sistema-operacional/" target="_blank" rel="noopener noreferrer">tecnoblog.net</a>
-                <br>
-               <a href="https://www.mundoubuntu.com.br/sobre/curiosidades-do-ubuntu/64-mas-afinal-o-que-e-o-linux-ubuntu" target="_blank" rel="noopener noreferrer">mundoubuntu.com</a>
-                <br>              
-               <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwja39DWiav3AhU1K7kGHSf0DygQFnoECAcQAQ&url=https%3A%2F%2Fwww.significados.com.br%2Fwindows%2F&usg=AOvVaw2OQnlMHS2G7xLw2Fe7P0EO" target="_blank" rel="noopener noreferrer">significados.com</a>
-            </p>
             </div>
         </section>
-
-    <section class="info">
-        <h2 id="S.O" >GCC (GNU Compiler Collection)</h2>
-        <br>
-        <div class="text">
-            <h3><b>O que é GCC?</b></h3>
-            <br>
-                <p>
-                    Ele é um compilador que é utilizado com foco nas linguagens de programação a 
-                    seguir: C, C ++, Objective-C, Fortran, Java e Ada.
-                </p>
-            <br>
-            <h3><strong>O que é um compilador?</strong></h3>
-            <br>
-                <p>
-                    Um compilador é um programa de sistema que traduz um programa descrito em uma 
-                    linguagem de alto nível para um programa equivalente em código de máquina para 
-                    um processador.
-                </p>
-            <br>
-            <h3>Como baixar GCC no Linux?</h3>
-            <button id="button" type="button" id="input" class="btn btn-outline-dark">seguir</button>
-        </div>
-        <p>
-            Ubuntu utilizando a ferramenta de linha de comando apt. Devemos nos conectar como 
-            superusuário para instalar o GCC utilizando a ferramenta de linha de comando apt.
-            <ol>
-                <li> 
-                    tualizar a lista de pacotes com o comando:
-                    sudo apt update</li>
-                <li>
-                    atualizar todos os pacotes com atualizações disponíveis com o comando:
-                    sudo apt upgrade</li>
-                <li>
-                    Instalar o pacote build-essential utilizando o comando:
-                    sudo apt install build-essential</li>
-                <li>
-                    O seguinte comando serve para ver a versão foi instalada com sucesso:
-                    gcc --version</li>
-                
-            </ol>
-            <h3>Como compilar programas utilizando o gcc?</h3>
-            <br>
-                1- Para compilar se usa o seguinte comando:
-                <br>
-            ex:
-            <br>
-                gcc hello_world.c -o hello _world
-                <br>
-            Assim ele compila o programa hello_world.c para produzir um executável com o nome hello_world.
-            comando para rodar:
-            <br>
-                ./hello_world
-
-        </p>
-        <br>
-        <br>
-    <button id="button" type="button" id="input" class="btn btn-outline-dark">APACHE</button>
-<section>
+        <section>
+            <h4>Comandos no SO linux que são utilizados diariamente por alunos de computação e profissionais da área.</h4>
+            <div>
+                <ul>
+                    <li>~ : você está na sua pasta de usuário.</li> 
+                    <li>LS-L: conteúdo do diretório (Seria o dir do windows)</li>
+                    <li>cls: limpar a tela.</li>
+                    <li>man:  vai mostrar o que esse comando faz.</li>
+                    <li>ls  help: traz a documentação do LS.</li>
+                    <li>cd / : criar pasta.</li>
+                    <li>usr: pasta que tem todos os usuários</li>
+                    <li>cd .. / root: sai da pasta que está e vai para a anterior (raiz) e vai para root.</li>
+                    <li>mkdir: fazer uma pasta.</li>
+                    <li>cp: copiar. Exemplo: cp teste.txt . ./pasta1</li>
+                    <li>rmdir: apaga pasta.</li> 
+                    <li>pmw: te diz a pasta em que você está.</li>
+                    <li>rename: mudar o nome.</li>
+                    <li>apt: baixar ou atualizar.</li> 
+                    <li>sudo: update de app</li>
+                    <li>sudo apt install gcc: instalar linguagem C.</li>
+                    <li>nano teste.cpp: programar.</li>
+                    <li>ctrl O+enter+ctrl X: salvar e sair do programa.</li>    
+                </ul>
+            </div>
+        </section>
+    
     <!--Essa parte tem que aparecer depois de apertar o botão de cima-->
-<section class="info">
-<h2 >Apache</h2>
+<section class="info"> <!--apache-->
+<h2 id="apache">Apache</h2>
 <div class="text">
-    <br>
-    <button id="button" type="button" id="input" class="btn btn-outline-dark">Curiosidade</button>
     <br>
     <p>
         Curiosidade: O Apache é um servidor de código aberto e nome oficial é Apache HTTP Server.
@@ -238,75 +212,112 @@
 </section>
 <section>
 <br>
-<section>
-    <ol>
-        <p>Como baixar Chromium e Visual Studio Code pela lojinha do linux</p>    
+<section> <!--lojinha-->
+        <h2 id="lojinha">Como baixar Chromium e Visual Studio Code pela lojinha do linux</h2>    
         <ul>
-            <p>Chromium- Utilizado no linux como navegador</p>
+            <h4>Chromium- Utilizado no linux como navegador</h4>
             <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6b%2Fa4%2F69%2F6ba469e133d383f35029cf84a4ed3ca9.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.ch%2Fpin%2F552605816761904293%2F&tbnid=stOSy9aZ0wMkgM&vet=12ahUKEwiBiLj1nLf3AhVchJUCHbfPBoEQMygKegUIARDOAQ..i&docid=XuXSeE7pDr_NyM&w=350&h=200&itg=1&q=ubuntu%20store%20logo&ved=2ahUKEwiBiLj1nLf3AhVchJUCHbfPBoEQMygKegUIARDOAQ" alt="logo_store">
-            <li> Entre na Loja do linux e pesquise pelo Chromium;
-            <li> Quando terminar o Download, só precisa autorizar a intalação na máquina;
+            <li> Entre na Loja do linux e pesquise pelo Chromium;</li>
+            <li> Quando terminar o Download, só precisa autorizar a intalação na máquina;</li>
         </ul>
         <ul>
-                <p>Vscode- Visual Studio Code- Uma ferramenta utilizada pra vários tipos de linguagens de programação. <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Link para o site</a> </p>
-                <li> Depois do Chromium baixado e funcionando, só precisa pesquisar pelo site do Vscode e baixar na máquina.
-                <li> A máquina vai pedir permissão para continuar com a instalação por segurança, pode continuar sem problemas
-                <p>Obs: Cuidado com qual versão do Linux está usando, no contexto de qual usamos em sala o arquivo ideal era o .deb</p>
-            </ul>
-    </ol>
-</section>
-<section>
-    <ol>
-        <p>Como programar em C pelo terminal Linux</p>
-        <ul>
-            <li>1- Você precisa baixar o <a>GCC</a>
-            <li>2- Aprender como é o comando para criar uma <a>pasta</a> no linux
-            <li>3- Aí podemos iniciar os comandos para programar em C:
+            <h4>Vscode- Visual Studio Code- Uma ferramenta utilizada pra vários tipos de linguagens de programação. <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Link para o site</a> </h4>
+            <li> Depois do Chromium baixado e funcionando, só precisa pesquisar pelo site do Vscode e baixar na máquina.</li>
+            <li> A máquina vai pedir permissão para continuar com a instalação por segurança, pode continuar sem problemas</li>
+            <p><strong>Obs: Cuidado com qual versão do Linux está usando, no contexto de qual usamos em sala o arquivo ideal era o .deb</strong></p>
         </ul>
-    </ol>
 </section>
-<section>
-    <p>Comandos no SO Windows que são utilizados diariamente por alunos de computação e profissionais da área.</p>
-    <ul>
-        <li>\ : tem uma pasta a seguir dele.
-        <li>> : é o fim do comando. 
-        <li>cls: limpar a tela.
-        <li>color —- : nesse espaço o respectivo número de cor vai mudar a cor das letras. 
-        <li>help —-- :  o comando que você colocar no espaço vai mostrar o que esse comando faz.
-        <li>dir: mostrar o conteúdo da pasta.
-        <li>cd : comando que te permite se movimentar entre as pastas
-        <li>cd . . : comando para sair das pastas.
-        <li>cd \ : ir direto para a raiz. 
-        <li>. . : o diretório que está atrás de mim. 
-        <li>C:\Users\paulo\downloads> cd . . \ documents : Tira o último e vai para…
-        <li>md: criar pasta.
-        <li>rd: apagar pasta.
+<section class="info"> <!--GCC-->
+    <h2 id="gcc" >GCC (GNU Compiler Collection)</h2>
+    <br>
+    <div class="text">
+        <h3>O que é GCC?</h3>
+        <br>
+            <p>
+                Ele é um compilador que é utilizado com foco nas linguagens de programação a 
+                seguir: C, C ++, Objective-C, Fortran, Java e Ada.
+            </p>
+        <br>
+        <h3><strong>O que é um compilador?</strong></h3>
+        <br>
+            <p>
+                Um compilador é um programa de sistema que traduz um programa descrito em uma 
+                linguagem de alto nível para um programa equivalente em código de máquina para 
+                um processador.
+            </p>
+        <br>
+        <h3>Como baixar GCC no Linux?</h3>
+    </div>
+    <p>
+        Ubuntu utilizando a ferramenta de linha de comando apt. Devemos nos conectar como 
+        superusuário para instalar o GCC utilizando a ferramenta de linha de comando apt.
+        <ol>
+            <li> 
+                atualizar a lista de pacotes com o comando:
+                sudo apt update</li>
+            <li>
+                atualizar todos os pacotes com atualizações disponíveis com o comando:
+                sudo apt upgrade</li>
+            <li>
+                Instalar o pacote build-essential utilizando o comando:
+                sudo apt install build-essential</li>
+            <li>
+                O seguinte comando serve para ver a versão foi instalada com sucesso:
+                gcc --version</li>
             
-    </ul>
+        </ol>
+        <h3>Como compilar programas utilizando o gcc?</h3>
+        <br>
+            1- Para compilar se usa o seguinte comando:
+            <br>
+        ex:
+        <br>
+            gcc hello_world.c -o hello _world
+            <br>
+        Assim ele compila o programa hello_world.c para produzir um executável com o nome hello_world.
+        comando para rodar:
+        <br>
+            ./hello_world
+
+    </p>
+    <br>
 </section>
-<section>
-        <p>Comandos no SO linux que são utilizados diariamente por alunos de computação e profissionais da área.</p>
-        <ul>
-            <li>~ : você está na sua pasta de usuário. 
-            <li>LS-L: conteúdo do diretório (Seria o dir do windows)
-            <li>cls: limpar a tela.
-            <li>man:  vai mostrar o que esse comando faz.
-            <li>ls  help: traz a documentação do LS.
-            <li>cd / : criar pasta.
-            <li>usr: pasta que tem todos os usuários
-            <li>cd .. / root: sai da pasta que está e vai para a anterior (raiz) e vai para root.
-            <li>mkdir: fazer uma pasta.
-            <li>cp: copiar. Exemplo: cp teste.txt . ./pasta1
-            <li>rmdir: apaga pasta. 
-            <li>pmw: te diz a pasta em que você está.
-            <li>rename: mudar o nome.
-            <li>apt: baixar ou atualizar. 
-            <li>sudo: update de app
-            <li>sudo apt install gcc: instalar linguagem C.
-            <li>nano teste.cpp: programar.
-            <li>ctrl O+enter+ctrl X: salvar e sair do programa.    
-        </ul>
-    </section>
+
+<section> <!--C-->
+
+    <h2 id="C">Como programar em C pelo terminal Linux</h2>
+    <ul>
+        <li>1- Você precisa baixar o GCC</li>
+        <li>2- Aprender como é o comando para criar uma pasta no linux</li>
+        <li>3- Aí podemos iniciar os comandos para programar em C:</li>
+    </ul>
+    <p>Exemplo:</p>
+    <pre>
+        #include stdio.h 
+        #include stdlib.h
+
+        int main (){
+            int a, b;
+            
+            printf ("informe o primeiro número: ");
+            scanf("%d", &a);
+            printf("informe o segundo número: ");
+            scanf("%d", &b);
+
+            printf("A soma dos números é: %d", a+b);
+            return 0;
+        }
+    </pre>
+</section>
+<p>
+    fonte de estudo: <br>
+   <a href="https://tecnoblog.net/responde/o-que-e-um-sistema-operacional/" target="_blank" rel="noopener noreferrer">tecnoblog.net</a>
+    <br>
+   <a href="https://www.mundoubuntu.com.br/sobre/curiosidades-do-ubuntu/64-mas-afinal-o-que-e-o-linux-ubuntu" target="_blank" rel="noopener noreferrer">mundoubuntu.com</a>
+    <br>              
+   <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwja39DWiav3AhU1K7kGHSf0DygQFnoECAcQAQ&url=https%3A%2F%2Fwww.significados.com.br%2Fwindows%2F&usg=AOvVaw2OQnlMHS2G7xLw2Fe7P0EO" target="_blank" rel="noopener noreferrer">significados.com</a>
+</p>
+
 </section>
 
        </div>

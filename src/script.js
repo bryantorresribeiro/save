@@ -16,32 +16,44 @@ function ligth(){
 
 color.addEventListener("click", ligth);
 
+//Botões de pesquisa
+const buttonSO = document.getElementById("S.Ob")
+const buttonVB = document.getElementById("V.Bb");
+
+function buttons(button){
+    if(button === buttonSO.id){
+        window.location.href = `so.html`;
+    }  
+    if(button === buttonVB.id){
+        window.location.href = `vb.html`;
+    }
+};
+
+buttonSO.addEventListener('click', function(){
+    buttons(buttonSO.id);
+});
+buttonVB.addEventListener('click', function(){
+    buttons(buttonVB.id);
+});
+
 //Campo de pesquisa
 const input = document.querySelector("#input");
 const button = document.querySelector("#button");
 
 function handleClick(){
-    
-    const array = [["apache", "dns"], ["gcc", "c++", "devtolss"]];
+    const SO = ["apache", "dns"] 
+    const VB = ["gcc", "c++", "devtolss"];
     const pesquisa = input.value.toLowerCase()
-    const BreakError = {};
-
-    try {
-        array.forEach(item=>{
-            if(item.includes(pesquisa)){
-                throw BreakError;
-            }else{
-                const results = document.querySelector(".results");
-                results.style.display = "flex";
-            }
-        });
-    }catch(err) {
-        window.location.href = pesquisa;
-    }
+  
+   if(SO.includes(pesquisa)){
+    window.location.href = `so.html#${pesquisa}`;
+   }else if(VB.includes(pesquisa)){
+    window.location.href = `vb.html#${pesquisa}`;
+   }else{
+    const results = document.querySelector(".results");
+    results.style.display = "flex";
+   }
 }  
-
-
-
 
 button.addEventListener("click", handleClick);
 

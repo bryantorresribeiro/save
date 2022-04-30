@@ -1,7 +1,4 @@
-body{
-    display: flex;
-    flex-direction: column;
-}
+
 header{
     display: flex;
     width: 100%;
@@ -46,11 +43,19 @@ header nav img:hover{
     height: 50px;
     cursor: pointer;
 }
-main{
+body{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.espace{
+    margin: 20px;
+}
+main{
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
 }
 aside{
@@ -58,16 +63,24 @@ aside{
     display: flex;
     justify-content: center;
     background-color: #332C3C;
-    width: 130px;
+    width: 400px;
     height: 100%;
     border-radius: 10px;
     overflow-y: scroll;
+    margin-right: 40px;
+}
+aside nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+aside nav a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
 }
 ::-webkit-scrollbar {
     background-color: #733fb6;   
-}
-aside li{
-    margin: 10px;
 }
 .left{
    display: flex;
